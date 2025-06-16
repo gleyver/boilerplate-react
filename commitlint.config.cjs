@@ -1,6 +1,6 @@
-import list from './changelog.config.js'
+import list from './changelog.config.cjs'
 
-export default {
+module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'type-enum': [2, 'always', list],
