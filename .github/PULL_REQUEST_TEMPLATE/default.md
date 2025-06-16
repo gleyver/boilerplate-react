@@ -28,7 +28,7 @@ Inclua aqui prints de tela, gravações, ou logs que comprovem o funcionamento c
 - [ ] Código testado manualmente
 - [ ] Testes automatizados atualizados/criados (se aplicável)
 - [ ] Documentação atualizada (README, comentários, etc.)
-- [ ] Pull Request revisado por pelo menos 1 desenvolvedor
+- [ ] Pull Request revisado por pelo menos 1 desenvolvedorr
 
 3. ...
 
