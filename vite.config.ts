@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), visualizer({ open: true }), tailwindcss()],
+  plugins: [react(), visualizer({ open: false }), tailwindcss()],
   resolve: {
     alias: {
       '@components': resolve(__dirname, 'src/components'),
