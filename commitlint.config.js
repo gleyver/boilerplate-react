@@ -1,4 +1,4 @@
-import list from './changelog.config.cjs'
+import list from './changelog.config.js'
 
 module.exports = {
   extends: ['@commitlint/config-conventional'],
