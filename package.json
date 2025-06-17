@@ -45,8 +45,8 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@types/react-i18next": "^8.1.0",
-    "@typescript-eslint/eslint-plugin": "^8.34.0",
-    "@typescript-eslint/parser": "^8.34.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
     "@vitejs/plugin-react": "^4.5.2",
     "@vitest/browser": "^3.2.3",
     "@vitest/coverage-v8": "^3.2.3",
@@ -72,14 +72,6 @@
     "vite": "^6.3.5",
     "vitest": "^3.2.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged",
-      "pre-push": "npm run build",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
   "lint-staged": {
     "*.{js,ts,tsx,jsx,d.ts}": [
       "eslint --quiet --fix"
@@ -91,7 +83,7 @@
   "config": {
     "commitizen": {
       "path": "git-cz",
-      "config": "./changelog.config.js"
+      "config": "./changelog.config.mjs"
     }
   }
 }

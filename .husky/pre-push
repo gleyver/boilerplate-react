@@ -1,5 +1,9 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
+echo "🧪 Executando testes..."
 npm run test
+
+echo "🏗️ Executando build..."
+npx tsc -b && npx vite build
 
