@@ -6,12 +6,12 @@ Este projeto é um boilerplate moderno para aplicações front-end, utilizando R
 
 - **React**: ^19.1.0
 - **React DOM**: ^19.1.0
-- **React Router DOM**: ^7.6.2
+- **React Router DOM**: ^7.6.3
 - **TypeScript**: ~5.8.3
-- **Vite**: ^6.3.5
-- **Vitest**: ^3.2.3
-- **ESLint**: ^9.29.0
-- **Prettier**: ^3.5.3
+- **Vite**: ^7.0.0
+- **Vitest**: ^3.2.4
+- **ESLint**: ^9.30.1
+- **Prettier**: ^3.6.2
 - **Nanostores**: ^1.0.1
 - **Husky**: ^9.1.7
 - **Testing Library**: ^16.3.0
@@ -43,6 +43,7 @@ src/
 ```
 
 ### Domínios
+
 A pasta `domains/` permite organizar o código por contexto de negócio. Cada domínio pode conter seus próprios componentes, páginas, hooks, stores, services, types e testes. Exemplo:
 
 ```
@@ -58,6 +59,7 @@ src/domains/user/
 ```
 
 ### Rotas
+
 As rotas são centralizadas em `src/routes/`, facilitando a manutenção e expansão. Cada domínio pode exportar suas rotas e elas são agregadas no arquivo principal de rotas.
 
 ## Scripts Disponíveis
@@ -102,6 +104,7 @@ Os arquivos gerados ficarão na pasta `storybook-static/`.
 ### Estrutura dos stories
 
 Os arquivos de stories ficam em `src/**/*.stories.tsx` ou `.ts`. Exemplos reais podem ser encontrados em `src/stories/`, como:
+
 - `src/stories/Button.stories.ts`
 - `src/stories/Header.stories.ts`
 - `src/stories/Page.stories.ts`
@@ -114,12 +117,13 @@ export const Primary = {
     primary: true,
     label: 'Button',
   },
-};
+}
 ```
 
 ### Addons e integrações
 
 O Storybook está configurado com os seguintes addons principais:
+
 - **@storybook/addon-docs**: documentação automática dos componentes
 - **@storybook/addon-a11y**: checagem de acessibilidade (a11y)
 - **@storybook/addon-vitest**: integração com testes unitários
