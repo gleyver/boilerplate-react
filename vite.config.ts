@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   const enableVisualizer = env.VITE_VISUALIZER === 'true'
+  const isProd = mode === 'production'
 
   return {
     plugins: [
@@ -17,5 +18,13 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       tsconfigPaths(),
     ].filter(Boolean),
+    build: {
+      sourcemap: !isProd, // Desabilita sourcemap em produção
+      esbuild: isProd
+        ? {
+            drop: ['console', 'debugger'],
+          }
+        : undefined,
+    },
   }
 })
