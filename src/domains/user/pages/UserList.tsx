@@ -1,5 +1,4 @@
-import { Button } from '@components/button/Button'
-import React from 'react'
+import Button from '@components/button/Button'
 
 const UserList: React.FC = () => {
   return (

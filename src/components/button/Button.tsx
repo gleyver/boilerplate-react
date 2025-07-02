@@ -8,7 +8,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   fullWidth?: boolean
 }
 
-export function Button({
+const Button = ({
   children,
   variant = 'primary',
   size = 'md',
@@ -17,7 +17,7 @@ export function Button({
   className = '',
   disabled = false,
   ...props
-}: ButtonProps) {
+}: ButtonProps) => {
   const baseStyles =
     'font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center'
 
@@ -72,3 +72,5 @@ export function Button({
     </button>
   )
 }
+
+export default Button
