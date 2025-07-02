@@ -22,7 +22,6 @@
     "@tailwindcss/vite": "^4.1.11",
     "i18next": "^25.3.0",
     "nanostores": "^1.0.1",
-    "npx": "^3.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-i18next": "^15.5.3",
